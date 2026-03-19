@@ -1,0 +1,33 @@
+# Version control
+.git
+.gitignore
+
+# IDE and editors
+.vscode
+.idea
+
+# Documentation
+*.md
+
+# Build artifacts
+bin/
+vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.example
+
+# Scripts
+deploy.sh
+clean.sh
+Makefile
+
+# Docker
+Dockerfile

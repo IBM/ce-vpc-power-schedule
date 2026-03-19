@@ -1,0 +1,24 @@
+execution_mode: parallel # Execution mode: "parallel" (default) or "sequential"
+entities: # List virtual entities being managed.
+  - type: instance # Type can be: instance, tag, placement_group, resource_group, or vpc
+    value: "my-vsi-name" # Name of the VSI instance
+  - type: tag
+    value: "my-tag" # Tag name to filter instances
+  - type: placement_group
+    value: "my-placement-group" # Name of the placement group
+  - type: resource_group
+    value: "mc-rg" # Resource group name
+  - type: vpc
+    value: "my-vpc" # VPC name
+exclusions: # Specifies certain conditions under which the scheduled tasks should not run.
+  timezone: Europe/Rome # time zone to use
+  dates: # List of single dates
+    - date: '2025-12-25'
+      annual: true # true if the date occurs every year, false if it is only valid for the specified year
+  ranges: # List of date ranges
+    - from: '2025-08-10'
+      to: '2025-08-24'
+      annual: true
+    - from: '2025-12-25'
+      to: '2025-12-31'
+      annual: false

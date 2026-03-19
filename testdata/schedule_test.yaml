@@ -1,0 +1,33 @@
+# Test configuration file for unit tests
+entities:
+  - type: instance
+    value: test-instance-1
+  - type: instance
+    value: test-instance-2
+  - type: tag
+    value: env:production
+  - type: placement_group
+    value: test-placement-group
+  - type: resource_group
+    value: test-resource-group
+  - type: vpc
+    value: test-vpc
+
+exclusions:
+  timezone: "America/New_York"
+  dates:
+    - date: "2024-12-25"
+      annual: true
+    - date: "2024-01-01"
+      annual: true
+    - date: "2024-07-04"
+      annual: false
+  ranges:
+    - from: "2024-12-20"
+      to: "2024-12-31"
+      annual: true
+    - from: "2024-08-01"
+      to: "2024-08-15"
+      annual: false
+
+execution_mode: parallel

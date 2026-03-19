@@ -1,0 +1,9 @@
+# Minimal test configuration
+entities:
+  - type: instance
+    value: minimal-instance
+
+exclusions:
+  timezone: ""
+  dates: []
+  ranges: []

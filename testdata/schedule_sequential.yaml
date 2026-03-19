@@ -1,0 +1,13 @@
+# Test configuration file for sequential execution mode
+entities:
+  - type: instance
+    value: sequential-instance-1
+  - type: instance
+    value: sequential-instance-2
+
+exclusions:
+  timezone: "UTC"
+  dates: []
+  ranges: []
+
+execution_mode: sequential
